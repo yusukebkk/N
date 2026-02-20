@@ -39,6 +39,12 @@
     border-radius: 8px;
     text-align: center;
     -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+  .input-group input::-webkit-inner-spin-button,
+  .input-group input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
   .input-group input:focus {
     outline: none;
@@ -96,10 +102,10 @@
 
 <div class="input-group">
   <label>最安値
-    <input type="text" id="minVal" inputmode="decimal" autocomplete="off" placeholder="例: 100">
+    <input type="number" id="minVal" step="any" placeholder="例: 100">
   </label>
   <label>最高値
-    <input type="text" id="maxVal" inputmode="decimal" autocomplete="off" placeholder="例: 200">
+    <input type="number" id="maxVal" step="any" placeholder="例: 200">
   </label>
 </div>
 
